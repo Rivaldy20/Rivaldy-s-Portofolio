@@ -11,7 +11,7 @@
 
     <style>
         body {
-            background: #f3f3f3;
+            background-image: url(images/Latar2.jpg);
             font-family: "Baloo Tamma 2", cursive;
         }
         section {
@@ -20,14 +20,23 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .navbar{
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        background: rgb(0,0,0,0.6) !important;
+        }
+
         .nav-link {
             border: 2px solid transparent;
         }
         .nav-link:hover {
             text-decoration: none;
-            border-bottom: 2px solid #2491eb;
+            border-bottom: 2px solid #f3b509;
             transition: 0.5s ease;
         }
+
         .main_row {
             display: flex;
             justify-content: center;
@@ -149,7 +158,7 @@
     <!------------------------------------------------------- Section Home dimulai ------------------------------------------------------------->
     <section id="Home">
         <!--------------------------------------------------- Navigation Bar dimulai ---------------------------------------------------------->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">RV</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -160,16 +169,16 @@
                     <li class="nav-item active">
                     <a class="nav-link" href="#Home">HOME <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                     <a class="nav-link" href="#About">ABOUT</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                     <a class="nav-link" href="#Portofolio">PORTOFOLIO</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#Achievment">ACHIEVMENT</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#Contact">CONTACT</a>
                     </li>
                 </ul>
@@ -206,15 +215,16 @@
             </div>
 
             <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <img src="images/B1.jpeg" class="img-fluid rounded-circle" width="auto">
+                </div>
+
                 <div class="col-md-5 text-center">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sint accusamus omnis velit iste 
                        exercitationem nostrum natus quasi ea adipisci necessitatibus delectus minus quam, earum, voluptas odit. 
                        Commodi, dolores veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, natus ipsam molestias 
                        suscipit nostrum animi tenetur. Earum deleniti sapiente exercitationem ipsum voluptatibus nesciunt perspiciatis 
                        officiis eius repellat, provident tenetur voluptatem.</p>
-                </div>
-                <div class="col-md-5">
-                    <img src="images/B1.jpeg" class="img-fluid" width="auto">
                 </div>
             </div>
         </div>
@@ -394,7 +404,7 @@
                   <div>Instagram : rivaldy.20</div>
                 </div>
                 <div class="contact-form">
-                  <h2>Contact Us</h2>
+                  <h2>Contact Me</h2>
                   <form class="contact" action="" method="post">
                     <input type="text" name="name" class="text-box" placeholder="Your Name" required>
                     <input type="email" name="email" class="text-box" placeholder="Your Email" required>
@@ -407,6 +417,15 @@
     </section>
     <!------------------------------------------------------- Section Contact Selesai -------------------------------------------------------------->
 
+    <!------------------------------------------------------- Section Footer Dimulai -------------------------------------------------------------->
+    <footer>
+        <div class="container text-center py-3 mt-5">
+          <h5> Copyright &copy; 2021 |
+            <a class="text-decoration-none" href="#Home">Rivaldy Valentino</a>
+          </h5>
+        </div>
+      </footer>
+    <!------------------------------------------------------- Section Footer Selesai -------------------------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   </body>
